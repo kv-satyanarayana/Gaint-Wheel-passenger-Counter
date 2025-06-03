@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaint-Wheel passenger Counter</title>
+
+    <style>
+        body{
+            background-image: url('./image\ copy.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+        .box{
+            background-color: rgba(255, 255, 255, 0.6);
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            margin: auto;
+            border: 2px solid darkblue;
+            border-radius: 10px;
+            margin-top: 10%;
+        }
+        p{
+            font-size: 32px;
+        }
+        #entries{
+            font-size: 20px;
+        }
+        button{
+            padding: 10px;
+            margin-right: 10px;
+            border: 2px solid darkblue;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        #increment{
+            background-color: rgba(69, 69, 184, 0.627);
+        }
+        #save{
+            background-color: darkslateblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>People Entered : </p>
+        <p id="value">0</p>
+        <button id="increment" onclick="increaseCount()">Increment</button>
+        <button id="save" onclick="saveCount()">Save</button>
+        <p id="entries">Previous enteries: </p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
